@@ -3,6 +3,7 @@
 .home {
 
   .intro {
+    padding-top: 10rem;
 
     img {
       width: 100%;
@@ -74,11 +75,24 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-        .btnStyle(white, @btn-bg-color, @main-border-color);
-        width: 10rem;
-        padding: .8rem 0;
-        font-size: 1.8rem;
+      
+
+      .signup {
+        font-size: 1.6rem;
+        .flex(column);
+
+        input {
+          width: 80%;
+          margin-bottom: .8rem;
+        }
+
+        .btn {
+          .btnStyle(white, @btn-bg-color, @main-border-color);
+          width: 10rem;
+          padding: .8rem 0;
+          font-size: 1.8rem;
+          margin: 0 auto;
+        }
       }
 
     }
@@ -107,7 +121,7 @@
         width: 100%;
         margin-top: 15px;
 
-        .btn {
+        .signup .btn {
           width: 100%;
           padding: 25px 0;
         }
