@@ -1,1 +1,42 @@
 // Mixins Here
+
+// Flex Mixins
+.flex(@direction) {
+    display: flex;
+    flex-direction:  @direction;
+}
+.flex(@direction, @jContent) {
+    display: flex;
+    flex-direction:  @direction;
+    justify-content: @jContent;
+}
+.flex(@direction, @jContent, @aItems) {
+    display: flex;
+    flex-direction:  @direction;
+    justify-content: @jContent;
+    align-items: @aItems;
+}
+.flex(@direction, @jContent, @aItems, @aContent) {
+    display: flex;
+    flex-direction:  @direction;
+    justify-content: @jContent;
+    align-items: @aItems;
+    align-content: @aContent;
+}
+
+// Button
+.btnStyle(@textColor, @btnBg, @btnBorderColor) {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid @btnBorderColor;
+    border-radius: 6px;
+    background:@btnBg;
+    color: @textColor;
+    cursor: pointer;
+
+    &:hover {
+        background: @textColor;
+        color: @btnBg;
+    }
+}
