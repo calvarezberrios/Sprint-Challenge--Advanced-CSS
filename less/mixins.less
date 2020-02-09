@@ -40,3 +40,18 @@
         color: @btnBg;
     }
 }
+
+// Animations 
+.slideShow() {
+    animation: change 20s 2s infinite;
+
+    @keyframes change {
+        0%   { content: url("../img/blast.png"); opacity: 1;}
+        10%  { opacity: 0;}
+        30%  { content: url("../img/sky.png"); opacity: 1;  }
+        40%  { opacity: 0;}
+        60%  { content: url("../img/launch.png"); opacity: 1;}
+        70%  { opacity: 0;}
+        72%  { opacity: 0;}
+    }
+}
