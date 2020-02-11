@@ -1,1 +1,48 @@
 // Navigation code here
+
+.nav-bar {
+    width: 100%;
+    height: 10rem;
+    position: fixed;
+    .flex(column, space-between, center);
+    padding: 1.3rem;
+    background: @nav-bg;
+    border-bottom: 2px solid @nav-border;
+
+    .nav-links {
+        //max-width: 800px;
+        width: 100%;
+        //margin: 0 auto; 
+        .flex(row, center, center);
+        //border: 1px solid red;
+        
+
+        a {
+            display: block; 
+            padding-top: 1.9rem;
+            margin: 0 1.6rem;
+            color: @nav-font;
+
+            &:hover {
+                text-decoration: underline;
+            } // .nav-links a:hover
+        }
+    } // .nav-links
+
+    @media @phone {
+        .nav-links {
+            a {
+                margin: 0 1.4rem;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 450px) {
+        .nav-links {
+            a {
+                
+                margin: 0 .2rem;
+            }
+        }
+    }
+} // .nav-bar
